@@ -1,0 +1,23 @@
+server:
+  port: 8761
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    application-display-name: RegisterCenter
+eureka:
+  instance:
+    #eureka实例的主机名
+    hostname: eureka-server
+  client:
+    register-with-eureka: false     #是否把服务注册中心注册到eureka
+    fetch-registry: false           #是否从服务注册中心注册eureka获取注册信息
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: RegisterCenter
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: true
+
