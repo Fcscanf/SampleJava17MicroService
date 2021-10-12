@@ -1,6 +1,6 @@
 package com.fcant.companysvc.controller;
 
-import com.fcant.companysvc.bean.Company;
+import com.fcant.commonlib.bean.Company;
 import com.fcant.companysvc.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

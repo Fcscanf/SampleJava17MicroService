@@ -1,6 +1,6 @@
 package com.fcant.companysvc.service;
 
-import com.fcant.companysvc.bean.Company;
+import com.fcant.commonlib.bean.Company;
 
 /**
  * CompanyService

@@ -1,6 +1,6 @@
 package com.fcant.companysvc.repository;
 
-import com.fcant.companysvc.bean.Company;
+import com.fcant.commonlib.bean.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

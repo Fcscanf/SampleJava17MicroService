@@ -1,6 +1,6 @@
 package com.fcant.usersvc.service.impl;
 
-import com.fcant.usersvc.bean.Account;
+import com.fcant.commonlib.bean.Account;
 import com.fcant.usersvc.repository.AccountRepository;
 import com.fcant.usersvc.service.AccountService;
 import org.springframework.stereotype.Service;

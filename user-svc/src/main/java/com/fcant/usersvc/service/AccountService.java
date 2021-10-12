@@ -1,6 +1,6 @@
 package com.fcant.usersvc.service;
 
-import com.fcant.usersvc.bean.Account;
+import com.fcant.commonlib.bean.Account;
 
 /**
  * AccountService

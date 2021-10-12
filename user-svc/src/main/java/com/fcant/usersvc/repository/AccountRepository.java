@@ -1,6 +1,6 @@
 package com.fcant.usersvc.repository;
 
-import com.fcant.usersvc.bean.Account;
+import com.fcant.commonlib.bean.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

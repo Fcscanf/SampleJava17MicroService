@@ -1,4 +1,4 @@
-package com.fcant.companysvc.bean;
+package com.fcant.commonlib.bean;
 
 import lombok.Data;
 
@@ -13,12 +13,15 @@ import javax.persistence.*;
  */
 @Entity
 @Data
-@Table(name="company")
-public class Company {
+@Table(name="account")
+public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String email;
+
     private String name;
 
+    private String phoneNumber;
 }

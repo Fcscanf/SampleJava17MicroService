@@ -1,6 +1,6 @@
 package com.fcant.usersvc.controller;
 
-import com.fcant.usersvc.bean.Account;
+import com.fcant.commonlib.bean.Account;
 import com.fcant.usersvc.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

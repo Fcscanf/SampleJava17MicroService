@@ -1,6 +1,7 @@
 package com.fcant.companysvc.service.impl;
 
-import com.fcant.companysvc.bean.Company;
+import com.fcant.commonlib.monitor.CountTime;
+import com.fcant.commonlib.bean.Company;
 import com.fcant.companysvc.repository.CompanyRepository;
 import com.fcant.companysvc.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ public class CompanyServiceImpl implements CompanyService {
     CompanyRepository companyRepository;
 
     @Override
+    @CountTime(name = "", tag = "")
     public Company save(Company company) {
         return companyRepository.save(company);
     }
