@@ -9,26 +9,22 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fcant</groupId>
-    <artifactId>Eureka-Center</artifactId>
+    <artifactId>sample-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Eureka-Center</name>
-    <description>Eureka-Center</description>
+    <name>microservice</name>
+    <packaging>pom</packaging>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>eureka-center</module>
+        <module>common-lib</module>
+        <module>company-svc</module>
+        <module>user-svc</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
