@@ -1,0 +1,6 @@
+### 用户接口
+GET {{accountBaseUrl}}account/1
+
+
+### 企业信息接口
+GET {{companyBaseUrl}}company/1

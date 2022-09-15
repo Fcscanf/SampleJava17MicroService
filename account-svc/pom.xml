@@ -7,10 +7,10 @@
         <artifactId>sample-microservice</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>company-svc</artifactId>
+    <artifactId>account-svc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>company-svc</name>
-    <description>company-svc</description>
+    <name>user-svc</name>
+    <description>account-svc</description>
     <properties>
         <java.version>17</java.version>
         <repackage.classifier/>
@@ -26,6 +26,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
