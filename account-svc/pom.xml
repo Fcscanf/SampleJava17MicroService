@@ -9,7 +9,7 @@
     </parent>
     <artifactId>account-svc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-svc</name>
+    <name>account-svc</name>
     <description>account-svc</description>
     <properties>
         <java.version>17</java.version>
