@@ -1,8 +1,13 @@
 package com.fcant.accountsvc.service.impl;
 
-import com.fcant.commonlib.bean.Account;
 import com.fcant.accountsvc.service.AccountService;
+import com.fcant.commonlib.bean.Account;
+import com.fcant.commonlib.bean.Company;
+import com.fcant.commonlib.client.CompanyClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * AccountServiceImpl
@@ -14,6 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountServiceImpl implements AccountService {
 
+    @Resource
+    CompanyClient companyClient;
+
     @Override
     public Account save(Account account) {
         return account;
@@ -21,6 +29,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account findById(long id) {
-        return Account.builder().id(1L).email("fcscanf@outlook.com").name("Fcant").build();
+        ResponseEntity<Company> companyClientById = companyClient.findById(id);
+        return Account.builder().id(1L).email("fcscanf@outlook.com").name("Fcant").company(companyClientById.getBody()).build();
     }
 }

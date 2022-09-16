@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
  * @author Fcant 下午 23:53 2021/10/11/0011
  */
 @RestController
-@RequestMapping("/company")
+@RequestMapping("/v1/company")
 public class CompanyController {
 
     @Autowired

@@ -1,0 +1,3 @@
+endpoint:
+  companyService: http://company-svc:8081
+  accountService: http://account-svc:8082
