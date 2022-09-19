@@ -4,3 +4,9 @@ GET {{accountBaseUrl}}account/1
 
 ### 企业信息接口
 GET {{companyBaseUrl}}company/1
+
+### 代理访问Company接口
+GET http://172.29.250.177:8888/api/v1/namespaces/default/services/http:company-service:/proxy/v1/company/1
+
+### 代理访问Account接口
+GET http://172.29.250.177:8888/api/v1/namespaces/default/services/http:account-service:/proxy/v1/account/1
