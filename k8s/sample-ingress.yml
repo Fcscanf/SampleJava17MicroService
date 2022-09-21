@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fcant-ingress
+  namespace: default
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: www.fcant.com
+      http:
+        paths:
+          - path: /v1/company
+            pathType: Prefix
+            backend:
+              service:
+                name: company-svc
+                port:
+                  number: 8081
+          - path: /v1/account
+            pathType: Prefix
+            backend:
+              service:
+                name: account-svc
+                port:
+                  number: 8082
